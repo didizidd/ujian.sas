@@ -6,7 +6,7 @@ $username=$_POST["username"];
 $email=$_POST["email"];
 $password=$_POST["password"];
 
-$query = "INSERT INTO tb_users (username,email,password) VALUES ('username','email','password')";
+$query = "INSERT INTO tb_users (username,email,password) VALUES ('$username','$email','$password')";
 $eksekusi = mysqli_query ($koneksi,$query);
 
 }
